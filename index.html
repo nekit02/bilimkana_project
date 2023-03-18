@@ -9,7 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+    integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+    integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./calendar/calendar.min.css">
+    <link rel="stylesheet" href="./css/calendar.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <link rel="stylesheet" href="./css/media.css">
     <title>Document</title>
 </head>
@@ -257,6 +266,7 @@
                             </div>
                             <hr class="Info_line">
                         </div>
+
                     </div>
                     <h2 class="Info_subtitle">КАК ПОСТУПИТЬ В BILIMKANA AMERIKAN SCHOOL?</h2>
                     <div class="Info_block">
@@ -445,6 +455,18 @@
 
             </div>
         </section>
+        <section class="calendar">
+			<div class="container">
+				<h2 class="calendar__title section_title">Наши мероприятия </h2>
+			</div>
+			<div class="glide calendar__glide">
+				<div class="glide__track" data-glide-el="track">
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><ion-icon name="chevron-forward-circle-outline"></ion-icon></button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><ion-icon name="chevron-back-circle-outline"></ion-icon></button>
+				</div>
+		</section>
         <section class="Partners">
             <div class="container">
                 <div class="Partners_title section_title">Наши партнеры</div>
@@ -536,6 +558,7 @@
             </div>
         </div>
     </div>
+
     <div id="teachers_modal" class="hero_modal">
         <div class="hero_modal_body">
             <div class="hero_modal_content">
@@ -566,9 +589,16 @@
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+     
     <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+    integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./calendar/claendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/calendar.js"></script>
 </body>
 </html>

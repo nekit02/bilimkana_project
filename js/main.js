@@ -14,10 +14,10 @@ $(document).ready(function(){
         navText:['<ion-icon name="arrow-back-circle-outline"></ion-icon>' , '<ion-icon name="arrow-forward-circle-outline"></ion-icon>'],
         responsive : {
             1700:{
-                items:5,
+                items:6,
             },
-            1100 : {
-                items:4,
+            1000 : {
+                items:5,
             },
             768 : {
                 items:3,
