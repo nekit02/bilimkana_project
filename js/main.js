@@ -33,6 +33,20 @@ $(document).ready(function(){
         autoplay:true,
         autoplayTimeout:8000,
         autoplaySpeed:1000,
+        responsive : {
+            1400:{
+                items:4,
+            },
+            1000 : {
+                items:3,
+            },
+            768 : {
+                items:2,
+            },
+            520 : {
+                items:1,
+            }
+        }
     });
     $(".owl-carousel-4").owlCarousel({
         items:3,
@@ -43,6 +57,20 @@ $(document).ready(function(){
         autoplaySpeed:1000,
         nav:true,
         navText:['<ion-icon name="arrow-back-circle-outline"></ion-icon>' , '<ion-icon name="arrow-forward-circle-outline"></ion-icon>'],
+        responsive : {
+            1700:{
+                items:4,
+            },
+            1200 : {
+                items:3,
+            },
+            768 : {
+                items:2,
+            },
+            520 : {
+                items:1,
+            }
+        }
     });
     $(".owl-carousel-5").owlCarousel({
         items:3,
@@ -50,6 +78,19 @@ $(document).ready(function(){
         autoplay:true,
         autoplayTimeOut:8000,
         autoplaySpeed:1000,
+        responsive : {
+            1700:{
+                items:4,
+            },
+            1200 : {
+                items:3,
+            },
+            768 : {
+                items:2,
+            },
+            520 : {
+                items:1,
+            }}
     });
   });
   

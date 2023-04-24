@@ -1,6 +1,5 @@
 @media (max-width:1300px){
     .why_grid{
-        display: grid;
         grid-template-columns: repeat(2, 355px);
         grid-template-rows: repeat(3, 355px);
         row-gap: 30px;
@@ -10,5 +9,52 @@
 @media (max-width:1200px){
     .header_menu_li{
         font-size: 16px;
+    }
+    .Achievments_items{
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+    }
+    .Achievments_item{
+        margin-bottom: 20px;
+    }
+    .Step_container{
+        width: 100%;
+    }
+}
+@media (max-width:830px){
+    .hero2_logo{
+        display: none;
+    }
+    .why_grid{
+        grid-template-columns: repeat(1, 355px);
+        grid-template-rows: repeat(6, 355px);
+        row-gap: 30px;
+    }
+    .header_menu{
+        font-size: 14px;
+    }
+    .header_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 50%;
+    }
+    .Partners_content{
+        flex-direction: column;
+
+    }
+    .Partners_item:not(:last-child){
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    .Partners_item{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 30px 0;
     }
 }

@@ -114,11 +114,15 @@ html{
     color: black;
     transition: 0.2s;
 }
+@media(min-width:830px){
+    .header_menu{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.05em;
+    }
+}
 .header_menu li{    
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: -0.05em;
     text-transform: uppercase;
     white-space: nowrap;
     list-style-type: none;
@@ -339,6 +343,7 @@ html{
 
 .why{
     background: radial-gradient(101.22% 383.27% at -1.22% 2.97%, #8563CD 0%, #843E92 100%) ;
+    padding-bottom: 90px;
 }
 .why_title{
     color:  white;
@@ -411,10 +416,10 @@ html{
 .Information{
     margin: 90px 0;
 }
-.Info_title{
+ .Info_title{
     margin-bottom: 42px;
 }
-.Info_steps{
+/* .Info_steps{
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -448,6 +453,37 @@ html{
 }
 .Info_step_title_2{
     padding: 0 55px 0 75px;
+} */ 
+.Step_container{
+    display: flex;
+    width: 70%;
+    margin:  30px auto;
+}
+.Step_body{
+    width: 33.3333%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 100%;
+    min-height: 60px;
+    align-items: center;
+    font-size: 20px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+}
+.Step_text{
+    justify-self: center;
+    grid-column: 2;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+}
+.step_sign{
+    justify-self: flex-end;
+    margin-right: 10%;
 }
 .Info_block{
     margin-top: 73px;
