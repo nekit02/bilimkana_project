@@ -22,8 +22,11 @@ $(document).ready(function(){
             768 : {
                 items:3,
             },
-            520 : {
+            500 : {
                 items:2,
+            },
+            0 : {
+                items:1,
             }
         }
     });
@@ -43,7 +46,7 @@ $(document).ready(function(){
             768 : {
                 items:2,
             },
-            520 : {
+            0 : {
                 items:1,
             }
         }
@@ -67,7 +70,7 @@ $(document).ready(function(){
             768 : {
                 items:2,
             },
-            520 : {
+            0 : {
                 items:1,
             }
         }
@@ -88,7 +91,7 @@ $(document).ready(function(){
             768 : {
                 items:2,
             },
-            520 : {
+            0 : {
                 items:1,
             }}
     });

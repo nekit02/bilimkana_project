@@ -39,7 +39,7 @@
         align-items: center;
     }
     .logo{
-        width: 50%;
+        width: 70%;
     }
     .Partners_content{
         flex-direction: column;
@@ -68,4 +68,206 @@
     .header_divider{
         display: none;
     }
+
+    .Teachers_button{
+        display: none;
 }
+    .Teachers_item , .Staff_item , .Projects_item{
+        margin: 0 auto;
+    }
+
+
+
+    /* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.header_menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .header_menu li {
+    display: block;
+    padding: 12px 24px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .header_menu li:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .header_menu {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.header_menu {
+  transition-duration: .25s;
+}
+.header_menu li {
+  transition-duration: .25s;
+}
+.header_social{
+    display: none;
+
+}
+.header_search{
+    display: none;
+}
+.header_logo{
+    justify-self: left;
+}
+.header_top_burger_line{
+    display: block;
+}
+.footer_lower{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 , 1fr);
+}
+
+.footer_lower_item:nth-child(even) , .footer_lower_item:nth-child(odd){
+    justify-self: flex-start;
+    padding-top: 10px;
+}
+.footer_upper{
+    flex-direction: column;
+    gap: 30px;
+}
+.Step_container{
+    flex-direction: column;
+    align-items: center;
+}
+.Step_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.step_sign{
+    display: none;
+    
+}
+.step_sign:last-child{
+    display: block;
+}
+.step_adapt_sign{
+    display: block;
+}
+.Partners_img{
+    width: 70%;
+}
+.hero1_title , .hero2_title{
+    font-size: 30px;
+    line-height: normal;
+}
+.hero1_title{
+    padding-top: 100px;
+padding-bottom: 46px;
+}
+.hero_button{
+    transform: scale(0.7);
+    position: relative;
+    right: 50px;
+}
+.hero1_background{
+    height: 500px;
+}
+.hero{
+    height: 500px;
+}
+.owl-dots{
+    position: relative;
+    bottom: 60px;
+}
+.hero2_divider , .hero2_text{
+    display: none;
+}
+
+.hero2_title{
+    padding-top: 100px;
+    font-size: 30px;
+}
+.second_slide{
+    height: 500px;
+}
+
+
+}
+@media (max-width:500px){
+    .Partners_img{
+        width: 40%;
+    }
+    .hero2_title{
+        font-size: 24px;
+        color: white;
+    }
+    .Achievments_item{
+        width: 400px;
+        height:300px;
+    }
+    .Achievments_img{
+        object-fit: contain;
+    }
+}
+

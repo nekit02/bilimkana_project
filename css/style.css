@@ -933,3 +933,6 @@ html{
     z-index: 8;
     cursor: auto;
 }
+.step_adapt_sign{
+    display: none;
+}
