@@ -7,7 +7,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+#menu_toggle{
+    display:none;
+}
 .container{
     max-width: 1320px;
     margin: 0 auto;
