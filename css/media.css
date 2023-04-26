@@ -60,6 +60,12 @@
 }
 @media( max-width:700px){
     body{
+        /* display: none; */
+    }
+    .header_burger_container{
+        display: flex;
+    }
+    .header_divider{
         display: none;
     }
 }
