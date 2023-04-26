@@ -267,7 +267,14 @@ padding-bottom: 46px;
         height:300px;
     }
     .Achievments_img{
-        object-fit: contain;
+        width: 400px;
+        height: 300px;
+    }
+    .footer_logo{
+        width: 80%;
+    }
+    .Info_button{
+        transform: scale(0.7);
     }
 }
 
